@@ -266,6 +266,10 @@
                     "type": "archive",
                     "url": "https://github.com/horizon-eda/horizon/archive/v1.0.0.tar.gz",
                     "sha256": "64b97565599cb462bda1f14bfd289fa3204b5b3e7ec77b6576c07341dde32b4d"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0001-fix-metainfo-version.patch"
                 }
             ]
         }
