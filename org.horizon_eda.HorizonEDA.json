@@ -83,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.0.tar.xz",
-                    "sha256": "ca6da067ff93a6445780c0b4b226eb84f484ab104b8391fb744a45cbc7edbf56"
+                    "url": "https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.1.tar.xz",
+                    "sha256": "14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f"
                 }
             ]
         },
@@ -118,8 +118,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://libzip.org/download/libzip-1.6.1.tar.xz",
-              "sha256": "705dac7a671b3f440181481e607b0908129a9cf1ddfcba75d66436c0e7d33641"
+              "url": "https://libzip.org/download/libzip-1.7.3.tar.xz",
+              "sha256": "a60473ffdb7b4260c08bfa19c2ccea0438edac11193c3afbbb1f17fbcf6c6132"
             }
           ]
         },
@@ -143,8 +143,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.0.0.tar.gz",
-                    "sha256": "6a1fa16a7f6335ce8b2630fbdbb5e57c4027929ebc56fcd1ac55edb141b409b4"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.0.1.tar.gz",
+                    "sha256": "1775427a6098f441ddbaa5bd4e9b8a043c7401e450ed761e69a415530fea81d2"
                 }
             ]
         },
@@ -235,8 +235,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/v1.1.0.tar.gz",
-                    "sha256": "ab0e0bd19c811028435ac1633de6b300a09c06157aad61baae8e264bde0e8a6e"
+                    "url": "https://github.com/horizon-eda/horizon/archive/v1.2.0.tar.gz",
+                    "sha256": "f35b532ee3d25f554a802af4cb3e9cc7bf99b14a90176d3b12a5d7b3b1dd066e"
                 }
             ]
         }
