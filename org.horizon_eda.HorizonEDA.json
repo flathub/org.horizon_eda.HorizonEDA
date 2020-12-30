@@ -39,8 +39,8 @@
            "sources": [
                {
                    "type": "archive",
-                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.0.tar.xz",
-                   "sha256": "b97d9b041e5952486cab620b44ab09f6013a478f43b6699ae899b8a4da189cd4"
+                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.2.tar.xz",
+                   "sha256": "a2a99f3fa943cf662f189163ed39a2cfc19a428d906dd4f92b387d3659d1641d"
                }
            ]
         },
@@ -50,19 +50,20 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.3.tar.xz",
-                    "sha256": "0b68dfc6313c6cc90ac989c6d722a1bf0585ad13846e79746aa87cb265904786"
+                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.6.tar.xz",
+                    "sha256": "dda176dc4681bda9d5a2ac1bc55273bdd381662b7a6d49e918267d13e8774e1b"
                 }
             ]
         },
         {
             "name": "glibmm",
-            "config-opts": [ "--disable-documentation" ],
+            "config-opts": [ "-Dbuild-documentation=false" ],
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.64/glibmm-2.64.2.tar.xz",
-                    "sha256": "a75282e58d556d9b2bb44262b6f5fb76c824ac46a25a06f527108bec86b8d4ec"
+                    "url": "https://download.gnome.org/sources/glibmm/2.64/glibmm-2.64.5.tar.xz",
+                    "sha256": "508fc86e2c9141198aa16c225b16fd6b911917c0d3817602652844d0973ea386"
                 }
             ]
         },
@@ -79,35 +80,37 @@
         },
         {
             "name": "pangomm",
-            "config-opts": [ "--disable-documentation" ],
+            "config-opts": [ "-Dbuild-documentation=false" ],
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.1.tar.xz",
-                    "sha256": "14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f"
+                    "url": "https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.2.tar.xz",
+                    "sha256": "1b24c92624ae1275ccb57758175d35f7c39ad3342d8c0b4ba60f0d9849d2d08a"
                 }
             ]
         },
         {
             "name": "atkmm",
-            "config-opts": [ "--disable-documentation" ],
+            "config-opts": [ "-Dbuild-documentation=false" ],
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.0.tar.xz",
-                    "sha256": "4c4cfc917fd42d3879ce997b463428d6982affa0fb660cafcc0bc2d9afcedd3a"
+                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.1.tar.xz",
+                    "sha256": "116876604770641a450e39c1f50302884848ce9cc48d43c5dc8e8efc31f31bad"
                 }
             ]
         },
         {
             "name": "gtkmm",
-            "config-opts": [ "--disable-documentation" ],
-            "build-options": { "cxxflags": "-O2 -g -std=c++11" },
+            "config-opts": [ "-Dbuild-documentation=false" ],
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.2.tar.xz",
-                    "sha256": "6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3"
+                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.3.tar.xz",
+                    "sha256": "60497c4f7f354c3bd2557485f0254f8b7b4cf4bebc9fee0be26a77744eacd435"
                 }
             ]
         },
@@ -130,8 +133,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.2/zeromq-4.3.2.tar.gz",
-              "sha256": "ebd7b5c830d6428956b67a0454a7f8cbed1de74b3b01e5c33c5378e22740f763"
+              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.3/zeromq-4.3.3.tar.gz",
+              "sha256": "9d9285db37ae942ed0780c016da87060497877af45094ff9e1a1ca736e3875a2"
             }
           ]
         },
@@ -143,8 +146,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.0.1.tar.gz",
-                    "sha256": "1775427a6098f441ddbaa5bd4e9b8a043c7401e450ed761e69a415530fea81d2"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.1.0.tar.gz",
+                    "sha256": "41a6d5d740fd608674c7db8685685f45535323e73e784062cf000a633d420d1e"
                 }
             ]
         },
@@ -168,29 +171,58 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2",
-                    "sha256": "59c9b274bc451cf91a9ba1dd2c7fdcaf5d60b1b3aa83f2c9fa143417cc660722"
+                    "url": "https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.bz2",
+                    "sha256": "953db31e016db7bb207f11432bef7df100516eeb746843fa0486a222e3fd49cb"
                 }
             ],
             "buildsystem": "simple",
+            "cleanup": [ "/lib" ],
             "build-commands": [
                 "./bootstrap.sh --prefix=/app --with-libraries=context,date_time,filesystem,iostreams,locale,program_options,regex,system,thread,test",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
             ]
         },
         {
-            "name": "OCE",
+            "name": "libXmu",
+            "cleanup": [ "/share", "/lib" ],
+            "sources": [
+            {
+              "type": "archive",
+              "url": "https://www.x.org/archive//individual/lib/libXmu-1.1.3.tar.gz",
+              "sha256": "5bd9d4ed1ceaac9ea023d86bf1c1632cd3b172dce4a193a72a94e1d9df87a62e"
+            }
+          ]
+        },
+        {
+            "name": "opencascade",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/tpaviot/oce/archive/OCE-0.18.3.tar.gz",
-                    "sha256": "c553d6a7bf52f790abc3b6bb7a1e91a65947e92a426bb1a88a11960c31f0966c"
+                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_5_0;sf=tgz",
+                    "dest-filename": "opencascade.tgz",
+                    "sha256": "c8df7d23051b86064f61299a5f7af30004c115bdb479df471711bab0c7166654"
                 }
             ],
             "buildsystem": "cmake-ninja",
+            "cleanup": [ "/share" ],
             "config-opts": [
-                "-DOCE_INSTALL_PREFIX=/app",
-                "-DOCE_VISUALISATION=OFF"
+                "-DCMAKE_INSTALL_PREFIX=/app",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_LIBRARY_TYPE=Shared",
+                "-DBUILD_Inspector=OFF",
+                "-DBUILD_DOC_Overview=OFF",
+                "-DBUILD_MODULE_ApplicationFramework=ON",
+                "-DBUILD_MODULE_DataExchange=ON",
+                "-DBUILD_MODULE_Draw=OFF",
+                "-DBUILD_MODULE_FoundationClasses=ON",
+                "-DBUILD_MODULE_ModelingAlgorithms=ON",
+                "-DBUILD_MODULE_ModelingData=ON",
+                "-DBUILD_MODULE_Visualization=OFF",
+                "-DUSE_VTK=OFF",
+                "-DUSE_TBB=OFF",
+                "-DINSTALL_FREETYPE=OFF",
+                "-DINSTALL_SAMPLES=OFF",
+                "-DINSTALL_TEST_CASES=OFF"
             ]
         },
         {
@@ -203,8 +235,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/cppzmq/archive/v4.6.0.tar.gz",
-              "sha256": "e9203391a0b913576153a2ad22a2dc1479b1ec325beb6c46a3237c669aef5a52"
+              "url": "https://github.com/zeromq/cppzmq/archive/v4.7.1.tar.gz",
+              "sha256": "9853e0437d834cbed5d3c223bf1d755cadee70e7c964c6e42c4c6783dee5d02c"
             }
           ]
         },
@@ -229,7 +261,7 @@
             "name": "horizon-eda",
             "buildsystem": "simple",
             "build-commands": [
-                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/oce",
+                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade",
                 "make PREFIX=/app/ install"
             ],
             "sources": [
