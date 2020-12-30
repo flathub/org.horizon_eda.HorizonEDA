@@ -183,6 +183,7 @@
         },
         {
             "name": "libXmu",
+            "cleanup": [ "/share" ],
             "sources": [
             {
               "type": "archive",
@@ -202,6 +203,7 @@
                 }
             ],
             "buildsystem": "cmake-ninja",
+            "cleanup": [ "/share" ],
             "config-opts": [
                 "-DCMAKE_INSTALL_PREFIX=/app",
                 "-DCMAKE_BUILD_TYPE=Release",
