@@ -267,8 +267,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/v1.3.0.tar.gz",
-                    "sha256": "407ae0022d354d173dc9f75549c68f4d26c195375c28a41ea7c6edee6bfd9bab"
+                    "url": "https://github.com/horizon-eda/horizon/archive/v1.3.90.tar.gz",
+                    "sha256": "2cd130b9be66adefd0206ea7c156a74c8d6fec0bcccd415835892f26a59cc199"
                 }
             ]
         }
