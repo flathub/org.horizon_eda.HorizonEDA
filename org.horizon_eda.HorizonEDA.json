@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.64/glibmm-2.64.5.tar.xz",
-                    "sha256": "508fc86e2c9141198aa16c225b16fd6b911917c0d3817602652844d0973ea386"
+                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.0.tar.xz",
+                    "sha256": "9e1db7d43d2e2d4dfa2771354e21a69a6beec7c446b711619cf8c779e13a581e"
                 }
             ]
         },
@@ -85,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.2.tar.xz",
-                    "sha256": "1b24c92624ae1275ccb57758175d35f7c39ad3342d8c0b4ba60f0d9849d2d08a"
+                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.0.tar.xz",
+                    "sha256": "d3787d04d6198b606f3efa357b3b452a7140e2a7dee56f9f9ce516d7d5fcec1b"
                 }
             ]
         },
@@ -109,8 +109,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.3.tar.xz",
-                    "sha256": "60497c4f7f354c3bd2557485f0254f8b7b4cf4bebc9fee0be26a77744eacd435"
+                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.4.tar.xz",
+                    "sha256": "9beb71c3e90cfcfb790396b51e3f5e7169966751efd4f3ef9697114be3be6743"
                 }
             ]
         },
@@ -133,8 +133,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.3/zeromq-4.3.3.tar.gz",
-              "sha256": "9d9285db37ae942ed0780c016da87060497877af45094ff9e1a1ca736e3875a2"
+              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz",
+              "sha256": "c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5"
             }
           ]
         },
@@ -252,8 +252,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://downloads.sourceforge.net/project/podofo/podofo/0.9.6/podofo-0.9.6.tar.gz",
-              "sha256": "e9163650955ab8e4b9532e7aa43b841bac45701f7b0f9b793a98c8ca3ef14072"
+              "url": "https://downloads.sourceforge.net/project/podofo/podofo/0.9.7/podofo-0.9.7.tar.gz",
+              "sha256": "7cf2e716daaef89647c54ffcd08940492fd40c385ef040ce7529396bfadc1eb8"
             }
           ]
         },
