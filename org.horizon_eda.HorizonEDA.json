@@ -261,14 +261,14 @@
             "name": "horizon-eda",
             "buildsystem": "simple",
             "build-commands": [
-                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade",
+                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
                 "make PREFIX=/app/ install"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/v1.4.0.tar.gz",
-                    "sha256": "a0fbbbca903594975dd468af10581be8d52256ad441e7f8c71d1e70b341dbfe4"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.0.0.tar.gz",
+                    "sha256": "978fab9a20d367abfb785ef592e61648d0b21c8e573a7556325035e23f0110c3"
                 }
             ]
         }
