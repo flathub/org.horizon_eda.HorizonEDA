@@ -268,7 +268,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.1.90.tar.gz",
-                    "sha256": "1b9e57c87b932c103e3bd925d0cbbbea8e848934af1bb4d90541b36e74677032"
+                    "sha256": "73f66be6ae28479cbf3192bfe6965fd7c48f98a84cc601a0ed3459200ff44194"
                 }
             ]
         }
