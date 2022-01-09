@@ -1,7 +1,7 @@
 {
     "app-id": "org.horizon_eda.HorizonEDA",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "horizon-eda",
     "finish-args": [
@@ -85,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.1.tar.xz",
-                    "sha256": "c885013fe61a4c5117fda395770d507563411c63e49f4a3aced4c9efe34d9975"
+                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz",
+                    "sha256": "57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4"
                 }
             ]
         },
@@ -121,8 +121,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://libzip.org/download/libzip-1.7.3.tar.xz",
-              "sha256": "a60473ffdb7b4260c08bfa19c2ccea0438edac11193c3afbbb1f17fbcf6c6132"
+              "url": "https://libzip.org/download/libzip-1.8.0.tar.xz",
+              "sha256": "f0763bda24ba947e80430be787c4b068d8b6aa6027a26a19923f0acfa3dac97e"
             }
           ]
         },
@@ -146,8 +146,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.1.1.tar.gz",
-                    "sha256": "13a525373f64c711a00a058514d890d1512080265f98e0935ab279393f21a620"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.3.0.tar.gz",
+                    "sha256": "192eeff84596ff09efb6b01835a066f2df7cd7985e0991c79595688e6b36444e"
                 }
             ]
         },
@@ -198,9 +198,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_5_0;sf=tgz",
+                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_6_0;sf=tgz",
                     "dest-filename": "opencascade.tgz",
-                    "sha256": "c8df7d23051b86064f61299a5f7af30004c115bdb479df471711bab0c7166654"
+                    "sha256": "e7f989d52348c3b3acb7eb4ee001bb5c2eed5250cdcceaa6ae97edc294f2cabd"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -235,8 +235,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/cppzmq/archive/v4.7.1.tar.gz",
-              "sha256": "9853e0437d834cbed5d3c223bf1d755cadee70e7c964c6e42c4c6783dee5d02c"
+              "url": "https://github.com/zeromq/cppzmq/archive/v4.8.1.tar.gz",
+              "sha256": "7a23639a45f3a0049e11a188e29aaedd10b2f4845f0000cf3e22d6774ebde0af"
             }
           ]
         },
@@ -267,8 +267,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.1.0.tar.gz",
-                    "sha256": "2ba7a64ef0d8f22ad12e6a5a9c108f865eeb468f954f51ee5fbc03e6a847549a"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.2.0.tar.gz",
+                    "sha256": "6c04f2fe8a9e1ee148cd1aaf9d418eec2ebce1bdda1741c7a54fb53c95798f91"
                 }
             ]
         }
