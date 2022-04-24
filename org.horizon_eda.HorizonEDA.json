@@ -10,7 +10,9 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=home",
-        "--device=dri"
+        "--device=dri",
+        "--filesystem=/run/spnav.sock:ro",
+        "--env=SPNAV_SOCKET=/run/spnav.sock"
     ],
     "cleanup": [
         "*.a",
@@ -115,16 +117,16 @@
             ]
         },
         {
-          "name": "libzip",
-          "buildsystem": "cmake-ninja",
-          "cleanup": [ "/bin", "/share" ],
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://libzip.org/download/libzip-1.8.0.tar.xz",
-              "sha256": "f0763bda24ba947e80430be787c4b068d8b6aa6027a26a19923f0acfa3dac97e"
-            }
-          ]
+            "name": "libarchive",
+            "cleanup": ["/include", "/share", "/bin"],
+            "config-opts": [ "--prefix=/app", "--disable-static", "--without-xml2", "--without-nettle" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://www.libarchive.org/downloads/libarchive-3.6.1.tar.gz",
+                    "sha256": "c676146577d989189940f1959d9e3980d28513d74eedfbc6b7f15ea45fe54ee2"
+                }
+            ]
         },
         {
           "name": "zeromq",
@@ -260,17 +262,28 @@
           ]
         },
         {
+            "name": "libspnav",
+            "config-opts": ["--prefix=/app", "--disable-debug"],
+            "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/FreeSpacenav/libspnav/archive/v1.0/libspnav-1.0.tar.gz",
+              "sha256": "8849b7f7826d750f6956cf8f4f53937f2359ab6da97d6c834c71d5f771212e7c"
+            }
+          ]
+        },
+        {
             "name": "horizon-eda",
             "buildsystem": "simple",
             "build-commands": [
-                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
+                "make -j $FLATPAK_BUILDER_N_JOBS WITH_SPNAV=1 INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
                 "make PREFIX=/app/ install"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.2.0.tar.gz",
-                    "sha256": "6c04f2fe8a9e1ee148cd1aaf9d418eec2ebce1bdda1741c7a54fb53c95798f91"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.2.90.tar.gz",
+                    "sha256": "fda0e0630b73b1439189d1bdcd43988bcfa724740978301c2991f6d061ec8b1e"
                 }
             ]
         }
