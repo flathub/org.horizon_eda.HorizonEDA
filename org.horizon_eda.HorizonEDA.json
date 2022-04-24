@@ -39,8 +39,8 @@
            "sources": [
                {
                    "type": "archive",
-                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.3.tar.xz",
-                   "sha256": "e81596625899aacf1d0bf27ccc2fcc7f373405ec48735ca1c7273c0fbcdc1ef5"
+                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.4.tar.xz",
+                   "sha256": "e954c09b4309a7ef93e13b69260acdc5738c907477eb381b78bb1e414ee6dbd8"
                }
            ]
         },
@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.7.tar.xz",
-                    "sha256": "d082a2ce72c750f66b1a415abe3e852df2eae1e8af53010f4ac2ea261a478832"
+                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz",
+                    "sha256": "235a40bec7346c7b82b6a8caae0456353dc06e71f14bc414bcc858af1838719a"
                 }
             ]
         },
@@ -142,12 +142,14 @@
             "name": "libgit2",
             "buildsystem": "cmake",
             "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
-                             "-DTHREADSAFE=ON" ],
+                             "-DTHREADSAFE=ON",
+                             "-DCMAKE_BUILD_TYPE=None",
+                             "-Wno-dev" ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.3.0.tar.gz",
-                    "sha256": "192eeff84596ff09efb6b01835a066f2df7cd7985e0991c79595688e6b36444e"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.4.3.tar.gz",
+                    "sha256": "f48b961e463a9e4e7e7e58b21a0fb5a9b2a1d24d9ba4d15870a0c9b8ad965163"
                 }
             ]
         },
@@ -171,8 +173,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2",
-                    "sha256": "f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
+                    "sha256": "8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc"
                 }
             ],
             "buildsystem": "simple",
