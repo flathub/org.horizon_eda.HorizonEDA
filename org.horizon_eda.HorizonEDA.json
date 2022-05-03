@@ -276,14 +276,14 @@
             "name": "horizon-eda",
             "buildsystem": "simple",
             "build-commands": [
-                "make -j $FLATPAK_BUILDER_N_JOBS WITH_SPNAV=1 INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
+                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
                 "make PREFIX=/app/ install"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.2.90.tar.gz",
-                    "sha256": "fda0e0630b73b1439189d1bdcd43988bcfa724740978301c2991f6d061ec8b1e"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.2.91.tar.gz",
+                    "sha256": "d300fb9ba3a31b88f1b3442d6956625df0fc50d7050d10c530a418a47f34904e"
                 }
             ]
         }
