@@ -130,7 +130,7 @@
         },
         {
           "name": "zeromq",
-          "config-opts": ["--disable-static"],
+          "config-opts": ["--disable-static", "--disable-Werror"],
           "cleanup": [ "/bin", "/share" ],
           "sources": [
             {
