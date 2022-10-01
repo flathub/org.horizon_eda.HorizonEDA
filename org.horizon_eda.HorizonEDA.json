@@ -119,7 +119,7 @@
         {
             "name": "libarchive",
             "cleanup": ["/include", "/share", "/bin"],
-            "config-opts": [ "--prefix=/app", "--disable-static", "--without-xml2", "--without-nettle" ],
+            "config-opts": ["--disable-static", "--without-xml2", "--without-nettle" ],
             "sources": [
                 {
                     "type": "archive",
@@ -130,7 +130,7 @@
         },
         {
           "name": "zeromq",
-          "config-opts": ["--disable-static"],
+          "config-opts": ["--disable-static", "--disable-Werror"],
           "cleanup": [ "/bin", "/share" ],
           "sources": [
             {
@@ -142,10 +142,10 @@
         },
         {
             "name": "libgit2",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
                              "-DTHREADSAFE=ON",
-                             "-DCMAKE_BUILD_TYPE=None",
+                             "-DCMAKE_BUILD_TYPE=Release",
                              "-Wno-dev" ],
             "sources": [
                 {
@@ -210,8 +210,6 @@
             "buildsystem": "cmake-ninja",
             "cleanup": [ "/share" ],
             "config-opts": [
-                "-DCMAKE_INSTALL_PREFIX=/app",
-                "-DCMAKE_BUILD_TYPE=Release",
                 "-DBUILD_LIBRARY_TYPE=Shared",
                 "-DBUILD_Inspector=OFF",
                 "-DBUILD_DOC_Overview=OFF",
@@ -263,7 +261,7 @@
         },
         {
             "name": "libspnav",
-            "config-opts": ["--prefix=/app", "--disable-debug"],
+            "config-opts": ["--disable-debug"],
             "sources": [
             {
               "type": "archive",
