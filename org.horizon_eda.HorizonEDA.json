@@ -145,6 +145,7 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [ "-DBUILD_SHARED_LIBS:BOOL=ON",
                              "-DTHREADSAFE=ON",
+                             "-DCMAKE_BUILD_TYPE=Release",
                              "-Wno-dev" ],
             "sources": [
                 {
