@@ -41,8 +41,8 @@
            "sources": [
                {
                    "type": "archive",
-                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.4.tar.xz",
-                   "sha256": "e954c09b4309a7ef93e13b69260acdc5738c907477eb381b78bb1e414ee6dbd8"
+                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz",
+                   "sha256": "705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa"
                }
            ]
         },
@@ -52,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz",
-                    "sha256": "235a40bec7346c7b82b6a8caae0456353dc06e71f14bc414bcc858af1838719a"
+                    "url": "https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.0.tar.xz",
+                    "sha256": "1c466d2e64b34f9b118976eb21b138c37ed124d0f61497df2a90ce6c3d9fa3b5"
                 }
             ]
         },
@@ -64,8 +64,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.5.tar.xz",
-                    "sha256": "7b384662dd6ec3b86c0570331d32af05db2bd99a791602b767b4a0b2566ec149"
+                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz",
+                    "sha256": "5358742598181e5351d7bf8da072bf93e6dd5f178d27640d4e462bc8f14e152f"
                 }
             ]
         },
@@ -75,8 +75,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.14.3.tar.xz",
-                    "sha256": "0d37e067c5c4ca7808b7ceddabfe1932c5bd2a750ad64fb321e1213536297e78"
+                    "url": "https://www.cairographics.org/releases/cairomm-1.14.4.tar.xz",
+                    "sha256": "4749d25a2b2ef67cc0c014caaf5c87fa46792fc4b3ede186fb0fc932d2055158"
                 }
             ]
         },
@@ -87,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz",
-                    "sha256": "57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4"
+                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.3.tar.xz",
+                    "sha256": "410fe04d471a608f3f0273d3a17d840241d911ed0ff2c758a9859c66c6f24379"
                 }
             ]
         },
@@ -120,11 +120,12 @@
             "name": "libarchive",
             "cleanup": ["/include", "/share", "/bin"],
             "config-opts": ["--disable-static", "--without-xml2", "--without-nettle" ],
+            "post-install" :['sed -i "s/iconv //" /app/lib/pkgconfig/libarchive.pc'],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.libarchive.org/downloads/libarchive-3.6.1.tar.gz",
-                    "sha256": "c676146577d989189940f1959d9e3980d28513d74eedfbc6b7f15ea45fe54ee2"
+                    "url": "http://www.libarchive.org/downloads/libarchive-3.6.2.tar.gz",
+                    "sha256": "ba6d02f15ba04aba9c23fd5f236bb234eab9d5209e95d1c4df85c44d5f19b9b3"
                 }
             ]
         },
@@ -150,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.5.0.tar.gz",
-                    "sha256": "8de872a0f201b33d9522b817c92e14edb4efad18dae95cf156cf240b2efff93e"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.6.4.tar.gz",
+                    "sha256": "d25866a4ee275a64f65be2d9a663680a5cf1ed87b7ee4c534997562c828e500d"
                 }
             ]
         },
@@ -179,21 +180,13 @@
                     "sha256": "1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0"
                 }
             ],
-            "buildsystem": "simple",
-            "cleanup": [ "/lib" ],
-            "build-commands": [
-                "./bootstrap.sh --prefix=/app --with-libraries=context,date_time,filesystem,iostreams,locale,program_options,regex,system,thread,test",
-                "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
-            ]
-        },
-        {
             "name": "libXmu",
             "cleanup": [ "/share", "/lib" ],
             "sources": [
             {
               "type": "archive",
-              "url": "https://www.x.org/archive//individual/lib/libXmu-1.1.3.tar.gz",
-              "sha256": "5bd9d4ed1ceaac9ea023d86bf1c1632cd3b172dce4a193a72a94e1d9df87a62e"
+              "url": "https://www.x.org/archive//individual/lib/libXmu-1.1.4.tar.gz",
+              "sha256": "3091d711cdc1d8ea0f545a13b90d1464c3c3ab64778fd121f0d789b277a80289"
             }
           ]
         },
@@ -202,9 +195,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_6_0;sf=tgz",
+                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_7_1;sf=tgz",
                     "dest-filename": "opencascade.tgz",
-                    "sha256": "e7f989d52348c3b3acb7eb4ee001bb5c2eed5250cdcceaa6ae97edc294f2cabd"
+                    "sha256": "f413d30a8a06d6164e94860a652cbc96ea58fe262df36ce4eaa92a9e3561fd12"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -237,8 +230,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/cppzmq/archive/v4.8.1.tar.gz",
-              "sha256": "7a23639a45f3a0049e11a188e29aaedd10b2f4845f0000cf3e22d6774ebde0af"
+              "url": "https://github.com/zeromq/cppzmq/archive/v4.9.0.tar.gz",
+              "sha256": "3fdf5b100206953f674c94d40599bdb3ea255244dcc42fab0d75855ee3645581"
             }
           ]
         },
@@ -265,8 +258,8 @@
             "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/FreeSpacenav/libspnav/archive/v1.0/libspnav-1.0.tar.gz",
-              "sha256": "8849b7f7826d750f6956cf8f4f53937f2359ab6da97d6c834c71d5f771212e7c"
+              "url": "https://github.com/FreeSpacenav/libspnav/archive/v1.1/libspnav-1.1.tar.gz",
+              "sha256": "04b297f68a10db4fa40edf68d7f823ba7b9d0442f2b665181889abe2cea42759"
             }
           ]
         },
