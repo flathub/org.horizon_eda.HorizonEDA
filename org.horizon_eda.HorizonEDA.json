@@ -232,9 +232,7 @@
           "buildsystem": "cmake-ninja",
           "cleanup": [ "/bin", "/share", "/lib/pkgconfig"],
           "config-opts": [
-            "-DPODOFO_BUILD_LIB_ONLY=1",
-            "-DPODOFO_BUILD_SHARED=1",
-            "-DPODOFO_BUILD_STATIC=0"
+            "-DPODOFO_BUILD_LIB_ONLY=1"
           ],
           "sources": [
             {
@@ -257,11 +255,12 @@
         },
         {
             "name": "horizon-eda",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.5.90.tar.gz",
-                    "sha256": "9c29673c72e35b7f14bf1934be4d6c5c2862dd0c74367f1649ce93a43cceb461"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.5.91.tar.gz",
+                    "sha256": "166989baf8c338f23247a0ef01d8e8dade0b55731ed0267e91098e7fd37df827"
                 }
             ]
         }
