@@ -1,7 +1,7 @@
 {
     "app-id": "org.horizon_eda.HorizonEDA",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "horizon-eda",
     "finish-args": [
@@ -41,8 +41,8 @@
            "sources": [
                {
                    "type": "archive",
-                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz",
-                   "sha256": "705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa"
+                   "url": "https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.6.tar.xz",
+                   "sha256": "b55c46037dbcdabc5cee3b389ea11cc3910adb68ebe883e9477847aa660862e7"
                }
            ]
         },
@@ -52,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.0.tar.xz",
-                    "sha256": "1c466d2e64b34f9b118976eb21b138c37ed124d0f61497df2a90ce6c3d9fa3b5"
+                    "url": "https://download.gnome.org/sources/libsigc++/2.12/libsigc++-2.12.1.tar.xz",
+                    "sha256": "a9dbee323351d109b7aee074a9cb89ca3e7bcf8ad8edef1851f4cf359bd50843"
                 }
             ]
         },
@@ -64,8 +64,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz",
-                    "sha256": "5358742598181e5351d7bf8da072bf93e6dd5f178d27640d4e462bc8f14e152f"
+                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz",
+                    "sha256": "fe02c1e5f5825940d82b56b6ec31a12c06c05c1583cfe62f934d0763e1e542b3"
                 }
             ]
         },
@@ -75,8 +75,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cairographics.org/releases/cairomm-1.14.4.tar.xz",
-                    "sha256": "4749d25a2b2ef67cc0c014caaf5c87fa46792fc4b3ede186fb0fc932d2055158"
+                    "url": "https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz",
+                    "sha256": "70136203540c884e89ce1c9edfb6369b9953937f6cd596d97c78c9758a5d48db"
                 }
             ]
         },
@@ -87,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.3.tar.xz",
-                    "sha256": "410fe04d471a608f3f0273d3a17d840241d911ed0ff2c758a9859c66c6f24379"
+                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz",
+                    "sha256": "b92016661526424de4b9377f1512f59781f41fb16c9c0267d6133ba1cd68db22"
                 }
             ]
         },
@@ -99,8 +99,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz",
-                    "sha256": "7c2088b486a909be8da2b18304e56c5f90884d1343c8da7367ea5cd3258b9969"
+                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz",
+                    "sha256": "0a142a8128f83c001efb8014ee463e9a766054ef84686af953135e04d28fdab3"
                 }
             ]
         },
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.7.tar.xz",
-                    "sha256": "1d7a35af9c5ceccacb244ee3c2deb9b245720d8510ac5c7e6f4b6f9947e6789c"
+                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz",
+                    "sha256": "30d5bfe404571ce566a8e938c8bac17576420eb508f1e257837da63f14ad44ce"
                 }
             ]
         },
@@ -124,8 +124,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.libarchive.org/downloads/libarchive-3.6.2.tar.gz",
-                    "sha256": "ba6d02f15ba04aba9c23fd5f236bb234eab9d5209e95d1c4df85c44d5f19b9b3"
+                    "url": "http://www.libarchive.org/downloads/libarchive-3.7.4.tar.gz",
+                    "sha256": "7875d49596286055b52439ed42f044bd8ad426aa4cc5aabd96bfe7abb971d5e8"
                 }
             ]
         },
@@ -136,8 +136,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz",
-              "sha256": "c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5"
+              "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.5/zeromq-4.3.5.tar.gz",
+              "sha256": "6653ef5910f17954861fe72332e68b03ca6e4d9c7160eb3a8de5a5a913bfab43"
             }
           ]
         },
@@ -151,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.6.4.tar.gz",
-                    "sha256": "d25866a4ee275a64f65be2d9a663680a5cf1ed87b7ee4c534997562c828e500d"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.8.0.tar.gz",
+                    "sha256": "9e1d6a880d59026b675456fbb1593c724c68d73c34c0d214d6eb848e9bbd8ae4"
                 }
             ]
         },
@@ -161,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/g-truc/glm/releases/download/0.9.9.5/glm-0.9.9.5.zip",
-                    "sha256": "4fe34860ce69156f63eea6c3d84c91cadfc330353cf275ff394aef4e163cafee"
+                    "url": "https://github.com/g-truc/glm/archive/refs/tags/1.0.0.zip",
+                    "sha256": "66b3604366466c1674736cfec7c334d2d0b79b6c23096d1377637f4b71579c59"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -177,8 +177,8 @@
             "sources": [
             {
               "type": "archive",
-              "url": "https://www.x.org/archive//individual/lib/libXmu-1.1.4.tar.gz",
-              "sha256": "3091d711cdc1d8ea0f545a13b90d1464c3c3ab64778fd121f0d789b277a80289"
+              "url": "https://www.x.org/archive//individual/lib/libXmu-1.2.1.tar.gz",
+              "sha256": "bf0902583dd1123856c11e0a5085bd3c6e9886fbbd44954464975fd7d52eb599"
             }
           ]
         },
@@ -232,15 +232,13 @@
           "buildsystem": "cmake-ninja",
           "cleanup": [ "/bin", "/share", "/lib/pkgconfig"],
           "config-opts": [
-            "-DPODOFO_BUILD_LIB_ONLY=1",
-            "-DPODOFO_BUILD_SHARED=1",
-            "-DPODOFO_BUILD_STATIC=0"
+            "-DPODOFO_BUILD_LIB_ONLY=1"
           ],
           "sources": [
             {
               "type": "archive",
-              "url": "https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz",
-              "sha256": "5de607e15f192b8ad90738300759d88dea0f5ccdce3bf00048a0c932bc645154"
+              "url": "https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz",
+              "sha256": "4be2232643f9e9dd7fbb02894d5a0394c3ca2826aab179654c2cc751074825ec"
             }
           ]
         },
@@ -257,16 +255,12 @@
         },
         {
             "name": "horizon-eda",
-            "buildsystem": "simple",
-            "build-commands": [
-                "make -j $FLATPAK_BUILDER_N_JOBS INC_OCE=-I/app/include/opencascade LDFLAGS=\"-lm -lpthread\"",
-                "make PREFIX=/app/ install"
-            ],
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.5.0.tar.gz",
-                    "sha256": "c5cbe54b5f58289e52e4a8d0ed0594cd88ed0cfcef89e1c5ecdd5b82449449b4"
+                    "url": "https://github.com/horizon-eda/horizon/archive/refs/tags/v2.6.0.tar.gz",
+                    "sha256": "e7e680a05b92ac8ab4b6a32fb8e3b17bc298245d3d3d9224e9b3f7fb55b81256"
                 }
             ]
         }
