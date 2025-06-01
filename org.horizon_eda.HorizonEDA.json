@@ -64,8 +64,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz",
-                    "sha256": "fe02c1e5f5825940d82b56b6ec31a12c06c05c1583cfe62f934d0763e1e542b3"
+                    "url": "https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.8.tar.xz",
+                    "sha256": "64f11d3b95a24e2a8d4166ecff518730f79ecc27222ef41faf7c7e0340fc9329"
                 }
             ]
         },
@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz",
-                    "sha256": "30d5bfe404571ce566a8e938c8bac17576420eb508f1e257837da63f14ad44ce"
+                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz",
+                    "sha256": "7ab7e2266808716e26c39924ace1fb46da86c17ef39d989624c42314b32b5a76"
                 }
             ]
         },
@@ -124,8 +124,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.libarchive.org/downloads/libarchive-3.7.4.tar.gz",
-                    "sha256": "7875d49596286055b52439ed42f044bd8ad426aa4cc5aabd96bfe7abb971d5e8"
+                    "url": "http://www.libarchive.org/downloads/libarchive-3.8.0.tar.gz",
+                    "sha256": "191b5b24811499d5c2e5efa3248975fa6daa5e6a227700cc7b8e54d6d7c06eef"
                 }
             ]
         },
@@ -151,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgit2/libgit2/archive/v1.8.0.tar.gz",
-                    "sha256": "9e1d6a880d59026b675456fbb1593c724c68d73c34c0d214d6eb848e9bbd8ae4"
+                    "url": "https://github.com/libgit2/libgit2/archive/v1.9.0.tar.gz",
+                    "sha256": "75b27d4d6df44bd34e2f70663cfd998f5ec41e680e1e593238bbe517a84c7ed2"
                 }
             ]
         },
@@ -161,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/g-truc/glm/archive/refs/tags/1.0.0.zip",
-                    "sha256": "66b3604366466c1674736cfec7c334d2d0b79b6c23096d1377637f4b71579c59"
+                    "url": "https://github.com/g-truc/glm/archive/refs/tags/1.0.1.zip",
+                    "sha256": "09c5716296787e1f7fcb87b1cbdbf26814ec1288ed6259ccd30d5d9795809fa5"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -187,14 +187,20 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_7_1;sf=tgz",
+                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_8_1;sf=tgz",
                     "dest-filename": "opencascade.tgz",
-                    "sha256": "f413d30a8a06d6164e94860a652cbc96ea58fe262df36ce4eaa92a9e3561fd12"
+                    "sha256": "33f2bdb67e3f6ae469f3fa816cfba34529a23a9cb736bf98a32b203d8531c523"
+                },
+                {
+                    "type":"patch",
+                    "paths":["ft_outline.patch"]
                 }
             ],
             "buildsystem": "cmake-ninja",
             "cleanup": [ "/share" ],
             "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_RELEASE_DISABLE_EXCEPTIONS=OFF",
                 "-DBUILD_LIBRARY_TYPE=Shared",
                 "-DBUILD_Inspector=OFF",
                 "-DBUILD_DOC_Overview=OFF",
@@ -222,8 +228,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/zeromq/cppzmq/archive/v4.9.0.tar.gz",
-              "sha256": "3fdf5b100206953f674c94d40599bdb3ea255244dcc42fab0d75855ee3645581"
+              "url": "https://github.com/zeromq/cppzmq/archive/v4.10.0.tar.gz",
+              "sha256": "c81c81bba8a7644c84932225f018b5088743a22999c6d82a2b5f5cd1e6942b74"
             }
           ]
         },
@@ -237,8 +243,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz",
-              "sha256": "4be2232643f9e9dd7fbb02894d5a0394c3ca2826aab179654c2cc751074825ec"
+              "url": "https://github.com/podofo/podofo/archive/refs/tags/0.10.4.tar.gz",
+              "sha256": "6b1b13cdfb2ba5e8bbc549df507023dd4873bc946211bc6942183b8496986904"
             }
           ]
         },
@@ -248,8 +254,8 @@
             "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/FreeSpacenav/libspnav/archive/v1.1/libspnav-1.1.tar.gz",
-              "sha256": "04b297f68a10db4fa40edf68d7f823ba7b9d0442f2b665181889abe2cea42759"
+              "url": "https://github.com/FreeSpacenav/libspnav/archive/v1.2/libspnav-1.2.tar.gz",
+              "sha256": "e675a2476bd407b8d97a33f93c6651ad3ecdfd422916f260bd620f2aec7ca45f"
             }
           ]
         },
