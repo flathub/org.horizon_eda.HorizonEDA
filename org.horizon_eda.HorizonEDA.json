@@ -1,7 +1,7 @@
 {
     "app-id": "org.horizon_eda.HorizonEDA",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "horizon-eda",
     "finish-args": [
@@ -187,13 +187,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://git.dev.opencascade.org/gitweb/?p=occt.git;a=snapshot;h=refs/tags/V7_8_1;sf=tgz",
+                    "url": "https://github.com/Open-Cascade-SAS/OCCT/archive/refs/tags/V7_9_1.tar.gz",
                     "dest-filename": "opencascade.tgz",
-                    "sha256": "33f2bdb67e3f6ae469f3fa816cfba34529a23a9cb736bf98a32b203d8531c523"
-                },
-                {
-                    "type":"patch",
-                    "paths":["ft_outline.patch"]
+                    "sha256": "de442298cd8860f5580b01007f67f0ecd0b8900cfa4da467fa3c823c2d1a45df"
                 }
             ],
             "buildsystem": "cmake-ninja",
